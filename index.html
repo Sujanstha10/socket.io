@@ -15,7 +15,8 @@
       #messages { list-style-type: none; margin: 0; padding: 0; }
       #messages > li { padding: 0.5rem 1rem; }
       #messages > li:nth-child(odd) { background: #efefef; }
-    </style>
+      </style>
+      <script src="/socket.io/socket.io.js"></script>
   </head>
   <body>
     <h1>Socket Testing</h1>
@@ -24,7 +25,6 @@
       <input id="input" autocomplete="off" /><button>Send</button>
     </form>
   </body>
-  <script src="node_modules/socket.io/client-dist/socket.io.js"></script>
   <script>
  const socket = io();
 
